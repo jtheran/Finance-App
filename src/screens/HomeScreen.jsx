@@ -21,6 +21,13 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={{ flex: 1, padding: 20 }}>
+      <Button
+        mode="contained"
+        style={{ backgroundColor: '#A4FF00', marginBottom: 15 }}
+        onPress={() => navigation.navigate('Notifications')}
+      >
+        Ver Notificaciones
+      </Button>
       <Card style={{ marginBottom: 20 }}>
         <Card.Content>
           <Text variant="titleLarge">💰 Saldo actual</Text>
